@@ -1,5 +1,6 @@
 body {
-	margin: 10px 80px;
+	margin: 8px 330px 28px;
+	background-color: lightgrey;
 }
 .group {
 	border-top: 1px solid grey;
@@ -7,19 +8,28 @@ body {
 
 }
 
+.firstdiv {
+	border: 1px solid grey;
+	padding: 20px 100px;
+}
+div {
+	background-color: white;
+}
 img{
-	width:  15%;
+	width:  28%;
 	border-radius: 10px;
 	border-width: 411px;
 
 }
-
+#feedback {
+	line-height: 1;
+}
 #center_name {
 	text-align: center;
 
 }
 #name{
-	font-size: 25px;
+	font-size: 22px;
 	font-weight: bold;
 }
 
@@ -43,3 +53,6 @@ ul {
 	padding: 0px; 
 	margin-left: 20px;
 } 
+a:visited { 
+	color: blue;
+}
