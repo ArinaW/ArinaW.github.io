@@ -194,26 +194,26 @@ table {
 .figure:after {
 
     content: ' '; 
-    position: absolute; /* Абсолютное позиционирование */
-    left: 430px; bottom: 160px; /* Положение треугольника */
-    border: 2px solid transparent;	
-    border-top: 5px solid white;   
+    position: relative; /* Абсолютное позиционирование */
+    left: 90px; bottom: 4px; /* Положение треугольника */
+    border: 3px solid transparent;	
+    border-top: 7px solid white;  
 }
 .figure-first:after {
 
     content: ' '; 
-    position: absolute; /* Абсолютное позиционирование */
-    left: 543px; bottom: 160px; /* Положение треугольника */
-    border: 2px solid transparent;	
-    border-top: 5px solid white;   
+    position: relative; /* Абсолютное позиционирование */
+    left: 50px; bottom: 4px; /* Положение треугольника */
+    border: 3px solid transparent;	
+    border-top: 7px solid white;   
 }
 .figure-second:after {
 
     content: ' '; 
-    position: absolute; /* Абсолютное позиционирование */
-    left: 683px; bottom: 160px; /* Положение треугольника */
-    border: 2px solid transparent;	
-    border-top: 5px solid white;   
+    position: relative; /* Абсолютное позиционирование */
+    left: 74px; bottom: 4px; /* Положение треугольника */
+    border: 3px solid transparent;	
+    border-top: 7px solid white;   
 }
 .shadow {
 	background: #373737; /* Цвет фона */
