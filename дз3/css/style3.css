@@ -47,9 +47,7 @@ li {
 #open-section-footer {
 	text-decoration: underline;
 }
-.last_menu {
-	background-color: #e1e1e1;
-}
+
 .left_menu {
 	float: left;
 	height: 520px;
@@ -125,4 +123,15 @@ p {
 
 #tehnik {
 padding-right: 0px;
+}
+
+.last-menu {
+	float: left;
+	padding: 0px;
+	margin: 0px;
+}
+.last_menu {
+background-color: #e1e1e1;
+height: 20px;
+padding: 20px;
 }
