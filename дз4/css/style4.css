@@ -1,6 +1,11 @@
 *{
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
+}
+.header {
+	width: 350px;
+	float: left;
+	height: 175px;
 }
 
 p {
@@ -8,8 +13,8 @@ p {
 	font-size: 14px;
 }
 body {
-	background-image: url('../img/фон_дз4.jpg');
-	background-repeat: repeat-x;
+	background-image: url('../img/bg-hm4.jpg');
+	width: 1290px;
 }
 
 #google {
@@ -19,24 +24,23 @@ body {
 
 .page-white {
 	background-color: white;
-	margin: -5px 145px 30px;
+	margin: -5px 145px 10px;
 	background: white; /* Цвет фона */
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
-    height: 911px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+	
 }
 
 #logo {
-	/*float: left;*/
+	float: left;
 	height: 173px;
+	width: 300px;
 	position: relative;
 	left: 30px;
 	top: 4px;
-	float: left;
 }
-#slogan {
-	display: block;
-	padding: 0px 0px 0px -30px;
-} 
+.top {
+	height: 160px;
+}
 .contact {
 	float: right;
 	position: relative;
@@ -53,8 +57,10 @@ body {
 	color: #128aa7;
 }
 #name-country {
-	padding-top: 140px;
-	padding-left: 725px;
+	position: absolute;
+	padding-top: 145px;
+	padding-left: 665px;
+	width: 300px;
 }
 .contactP {
 	font-size: 12px;
@@ -68,33 +74,21 @@ body {
 	top:100px;
 	float: right;
 }
-
-li:hover{
-	content "."
+/*li:hover {
+	content: ".";
 	visibility: hidden;
-}
+*/
 ul {
 	display:block;
 }
-.submenu {
-	display: none;
-	box-shadow: 15px 15px 15px 15px 15px rgba(0,0,0,0.5);
-	background-color: #373737;
-	padding: 10px;
-	padding-right: 25px;
-	line-height: 1.52;
-	position: absolute;
-	z-index: 9999;
-	top: 32;
-	left: 10;
-}
+
 li {
 	display: block;
 	list-style-type: none;
-	
+
 }
 ul.main-menu > li:hover > ul.submenu {
-    display: block;
+	display: block;
 }
 
 .horiz-menu {
@@ -103,10 +97,11 @@ ul.main-menu > li:hover > ul.submenu {
 	padding-right: 3px;
 }
 .menu {
-	padding: 5px;
+	padding-top: 5px;
 	background: linear-gradient( to top, #303030, #373737);
 	margin-top: -8px;
-	
+	height: 30px;
+
 }
 .main-menu > li > :after {
 	float: none;
@@ -118,7 +113,7 @@ ul.main-menu > li:hover > ul.submenu {
 }
 .main-menu li{
 	float:left;
-	padding: 3px 0px 3px 70px;
+	padding: 3px 0px 3px 65px;
 }
 .main-menu {
 	height: 20px;
@@ -129,7 +124,7 @@ ul.main-menu > li:hover > ul.submenu {
 #photo {
 	position: relative;
 	left: 0px;
-	width: 100%;
+	width: 1000px;
 	top: 0px;
 	border-top: solid #128aa7 1px; 
 	border-bottom: solid #128aa7 1px;
@@ -145,31 +140,30 @@ ul {
 	float: left;
 	border-collapse: collapse;
 }
-.column {
-	background-color: lightgrey;
-}
+
 #first-col {
-	width:250px;
-	padding: 15px;
+	width:210px;
+	text-align: center;
+	padding: 0px;
 	vertical-align: top;
 	border-right: 1px solid #c7cacf;
+	height: 540px;
 }
 #second-col {
-	width: 800px;
+	width: 575px;
 	background-color: white;
 }
 #third-col {
-	width:250px;
-	padding: 15px;
+	text-align: center;
+	width:210px;
+	padding: 0px;
 	vertical-align: top;
 	border-left: 1px solid #c7cacf;
+	height: 540px;
 }
 .title {
 	font-size: 18px;
 	text-align: center;
-}
-td {
-	line-height: 1.7;
 }
 footer {
 	clear: both;
@@ -183,7 +177,7 @@ footer {
 	padding: 0px 15px 0px 0px;
 }
 .clear-fix:after {
-	content ".";
+	content: ".";
 	clear: both;
 	display: block;
 	visibility: hidden;
@@ -193,30 +187,70 @@ table {
 }
 .figure:after {
 
-    content: ' '; 
-    position: relative; /* Абсолютное позиционирование */
-    left: 90px; bottom: 4px; /* Положение треугольника */
-    border: 3px solid transparent;	
-    border-top: 7px solid white;  
+	content: ' '; 
+	position: relative; /* Абсолютное позиционирование */
+	left: 90px; bottom: 4px; /* Положение треугольника */
+	border: 3px solid transparent;	
+	border-top: 7px solid white;  
 }
 .figure-first:after {
 
-    content: ' '; 
-    position: relative; /* Абсолютное позиционирование */
-    left: 50px; bottom: 4px; /* Положение треугольника */
-    border: 3px solid transparent;	
-    border-top: 7px solid white;   
+	content: ' '; 
+	position: relative; /* Абсолютное позиционирование */
+	left: 50px; bottom: 4px; /* Положение треугольника */
+	border: 3px solid transparent;	
+	border-top: 7px solid white;   
 }
 .figure-second:after {
 
-    content: ' '; 
-    position: relative; /* Абсолютное позиционирование */
-    left: 74px; bottom: 4px; /* Положение треугольника */
-    border: 3px solid transparent;	
-    border-top: 7px solid white;   
+	content: ' '; 
+	position: relative; /* Абсолютное позиционирование */
+	left: 74px; bottom: 4px; /* Положение треугольника */
+	border: 3px solid transparent;	
+	border-top: 7px solid white;   
 }
-.shadow {
-	background: #373737; /* Цвет фона */
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
-    padding: 10px;
+/*.shadow {
+	background: #373737; /* Цвет фона 
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени 
+	padding: 10px;
+} */
+.field {
+	height: 350px;
+	width: 1800px;
+	background-image: url("../img/line1.png");
+	background-repeat: repeat-y;
+	background-size: 1000px;
+	height: 540px;
+}
+.column {
+	float: left;
+}
+p {
+	line-height: 1.8;
+}
+.small {
+	line-height: 1.5;
+}
+.submenu-f{
+/*	position: relative;
+	top: 80px;
+	left: 40px;
+}
+.submenu-s{
+	position: relative;
+	top: 80px;
+	left: 90px;
+}
+*/}
+
+.submenu {
+	display: none;
+	box-shadow:  0 0 15px rgba(0,0,0,0.5); 
+	background-color: #373737;
+	padding: 10px;
+	margin: -8px;	
+	line-height: 1.52;
+	z-index: 9999;
+	position: absolute;
+	
 }
