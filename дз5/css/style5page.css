@@ -8,6 +8,7 @@ body {
 	background-image: url('../img/5/bg5.png') ; 
 	background-size: 1210px;
 	background-repeat: no-repeat;
+	height: 1210px;
 }
 .refs {
 	text-decoration: none;
