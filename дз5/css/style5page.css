@@ -91,7 +91,7 @@ li {
 	background-image: -o-linear-gradient(bottom, rgba(0,0,0,.3) 20%, rgba(255,255,255,.3));
 	background-image: -ms-linear-gradient(bottom, rgba(0,0,0,.3) 20%, rgba(255,255,255,.3));
 	background-image: linear-gradient(to top, rgba(0,0,0,.3) 20%, rgba(255,255,255,.3));
-	height: 11px;
+	height: 10px;
 }
 
 .content {
