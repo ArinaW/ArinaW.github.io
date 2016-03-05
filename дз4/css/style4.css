@@ -14,7 +14,6 @@ p {
 }
 body {
 	background-image: url('../img/bg-hm4.jpg');
-	width: 1290px;
 }
 
 #google {
@@ -24,10 +23,12 @@ body {
 
 .page-white {
 	background-color: white;
-	margin: -5px 145px 10px;
+	margin: -5px 145px 30px;
 	background: white; /* Цвет фона */
 	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
-	
+	height: 979px;
+	width: 1000px;
+    margin: 0 auto;
 }
 
 #logo {
@@ -40,6 +41,7 @@ body {
 }
 .top {
 	height: 160px;
+	margin-top: -5px;
 }
 .contact {
 	float: right;
@@ -116,8 +118,6 @@ ul.main-menu > li:hover > ul.submenu {
 	padding: 3px 0px 3px 65px;
 }
 .main-menu {
-	height: 20px;
-	overflow: hidden;
 	background-image: url("../img/3.png" );
 	background-size: 100px 20px;
 }
@@ -141,29 +141,10 @@ ul {
 	border-collapse: collapse;
 }
 
-#first-col {
-	width:210px;
-	text-align: center;
-	padding: 0px;
-	vertical-align: top;
-	border-right: 1px solid #c7cacf;
-	height: 540px;
-}
-#second-col {
-	width: 575px;
-	background-color: white;
-}
-#third-col {
-	text-align: center;
-	width:210px;
-	padding: 0px;
-	vertical-align: top;
-	border-left: 1px solid #c7cacf;
-	height: 540px;
-}
 .title {
 	font-size: 18px;
 	text-align: center;
+	font-weight: 500;
 }
 footer {
 	clear: both;
@@ -215,15 +196,32 @@ table {
 	padding: 10px;
 } */
 .field {
-	height: 350px;
-	width: 1800px;
-	background-image: url("../img/line1.png");
+	width: 1000px;
+	background-image: url("../img/line3.png");
 	background-repeat: repeat-y;
 	background-size: 1000px;
-	height: 540px;
+	float: left;
+	position: relative;
+	top: -10px;
 }
 .column {
 	float: left;
+}
+#first-col {
+	width:210px;
+	text-align: center;
+	padding: 0px;
+	vertical-align: top;
+}
+#second-col {
+	width: 575px;
+}
+#third-col {
+	text-align: center;
+	width:210px;
+	padding: 0px 0px 0px 0px;
+	padding-top: 0px;
+	vertical-align: top;
 }
 p {
 	line-height: 1.8;
@@ -232,7 +230,7 @@ p {
 	line-height: 1.5;
 }
 .submenu-f{
-/*	position: relative;
+	/*	position: relative;
 	top: 80px;
 	left: 40px;
 }
@@ -248,9 +246,33 @@ p {
 	box-shadow:  0 0 15px rgba(0,0,0,0.5); 
 	background-color: #373737;
 	padding: 10px;
-	margin: -8px;	
 	line-height: 1.52;
 	z-index: 9999;
 	position: absolute;
+	top: 30px;
+
 	
 }
+.main-menu li {
+	position: relative;
+}
+.travel {
+	width: 115px;
+	padding-right: 0px;
+}
+
+/* 1. Не задавайте ширину body
+2. page-white задайте:
+    width: 1000px;
+    margin: 0 auto;
+3. .main-menu прибрати overflow: hidden; та height: 20px;
+4. .submenu прибрати margin: -8px;
+додати     top: 30px;
+5.   додати position: relative;
+6. Підправте колонки, їх треба зверстати одним із способів описаних в статті, не задаючи фіксованої висоти, у вас задана висота:
+.field {
+    width: 1800px;
+    background-image: url("../img/line1.png");
+    background-repeat: repeat-y;
+    background-size: 1000px;
+    height: 540px; /*
