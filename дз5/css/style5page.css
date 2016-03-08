@@ -4,11 +4,13 @@
 	font-family: Tahoma;
 	font-size: 14px;
 }
-body {
+
+.img-bg {
 	background-image: url('../img/5/bg5.png') ; 
-	background-size: 1210px;
+	background-size: cover;
 	background-repeat: no-repeat;
-	height: 1210px;
+	width: 1210px; 
+	height: 1050px;
 }
 .refs {
 	text-decoration: none;
@@ -74,15 +76,13 @@ li {
 .top-button ul li{
 	color: white;
 }
-
-#vender a{
-	
+.menu li:hover {
+	background-color: #4eabda;
+}
+.menu li a:hover {
 	color: white;
 }
-#vender {
-	background-color: #4eabda;
 
-}
 #last-li {
 	border: solid 1px #53ade8;
 	background-color: #4faedb;
@@ -103,16 +103,7 @@ li {
 	/*
 	/*background-color: #000000;*/
 }
-.bg-grey {
-	background-image: url('../img/5/bg-center.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	opacity: 0.63;
-	position: absolute;
-	width: 560px;
-	height: 615px;
 
-}
 .f-block  p {
 	font-size: 24px;
 	color: #ffffff;
@@ -121,14 +112,29 @@ li {
 }
 .f-block {
 	position: absolute;
-	left: 210px;
+	height: 60px;
+	width: 560px;
+	background-color: rgba(0,0,0,0.63);
+}
+.s-block {
+	position: absolute;
+	top: 65px;
+	padding: 0 0 15px 0;
+	height: 545px;
+	width: 560px;
+	background-color: rgba(0,0,0,0.63);
 }
 
-#log-in-fb-bot {
+.log-in-fb-but a{
+	display: block;
 	width: 275px;
+	height: 35px;
 	position: absolute;
-	top: 100px;
+	top: 40px;
 	left: 140px;
+	background-image: url("../img/5/log-in-fb-but.png");
+	border: none;
+	cursor: pointer;
 }
 #ou-line {
 	z-index: 2;
@@ -136,12 +142,12 @@ li {
 }
 .ou-line {
 	position: absolute;
-	top: 170px;
+	top: 100px;
 	left: 140px;
 }
 .ou-text {
 	position: absolute;
-	top: 173px;
+	top: 103px;
 	left: 268px;
 	color: #999999;
 }
@@ -149,13 +155,36 @@ input {
 	display: inline-block;
 	padding: 9.5px 15px;
 }
+.form-p2 {
+display: block;
+width: 550px;
+margin:  0 auto;
+}
+.form-p2-in {
+display: block;
+width: 550px;
+margin:  0 auto;
+}
+form 
+{
+	display: block;
+width: 550px;
+margin:  0 auto;
+}
+.poi {
+display: block;
+width: 50%;
+margin:  0 auto;
+padding-top: 130px;
+}
+.poi p {
+	margin-top: 15px;
+}
 
 .form-black {
 	width: 245px;	
 	border: none;
 	border-bottom: 1px solid #494948;
-	position: absolute;
-	left: 140px;
 	background-color: black;
 }
 
@@ -163,27 +192,17 @@ input {
 	background: #1b5288; /* Цвет фона */
 	border: 1px solid #85c9d4; /* Параметры рамки */
 }
-.form4-0 {	
-	top:205px;
+
+.form-p2 {
+	width: 550px;
 }
-.form4 {	
-	top:255px;
-}
-.form4-1 {
-	top:305px;
-}
-.form4-2 {
-	top:355px;
-}
-.form4-3 {
-	top:405px;
-}
-.form4-4 {
-	top:455px;
+.form-p2in {
+	margin: auto;
+
 }
 .checkbox {
 	position: absolute;
-	top: 475px;
+	top: 405px;
 	left: 140px;
 	color: #cccccc;
 }
@@ -191,7 +210,7 @@ input {
 .buttom-button {
 	width: 150px;
 	position: absolute;
-	top: 510px;
+	top: 440px;
 	left: 200px;
 }
 
@@ -205,18 +224,41 @@ input {
 	background-image: -ms-linear-gradient(bottom, rgba(0,0,0,.3) 20%, rgba(255,255,255,.3));
 	background-image: linear-gradient(to top, rgba(0,0,0,.3) 20%, rgba(255,255,255,.3));
 	width: 155px;
-	height: 41px;
+	height: 36px;
 	color: white;
 }
 .Privacy-Policy {
 	width: 310px;	
 	position: absolute;
-	top: 570px;
+	top: 495px;
 	left: 120px;
-	
 }
 .Privacy-Policy p {
 	font-size: 11px;
 	color: #cccccc;
 	text-align: center;
+	line-height: 1.5;
 }
+.last {
+	position: absolute;
+	top: 900px;
+	height: 200px;
+	width: 2px;
+}
+/*
+1.Ховер-ефекти на всі елементи меню
+2. прибрати висоту боді
+3. в html стр.62 </div> перенести після </form> (цю помилку видно на валідаторі, не забувайте перевіряти на ньому)
+4. на хедері фон треба задавати не картинкою, а кольором
+5. для боді background-size: cover;
+6. в коді є кілька зайвих <div>
+7. форму треба відцентрувати автоматично, 
+	горизонтально - margin: auto, вертикально - https://habrahabr.ru/company/netcracker/blog/277433/
+8. Фейсбук зробити кнопкою
+9.чекбокс і кнопку відправки внести під форму
+
+	*/
+	как правильно переносить стили из фш в цсс?
+	по поводу пункта 7 - горизонт. сделала,  верт. выровняла паддингом т к там ненужно именно ЦЕНТРИРОВАНИЕ по вертикали 
+	(мне кажется,в макете разные по высоте отступы сверху и снизу)
+	
