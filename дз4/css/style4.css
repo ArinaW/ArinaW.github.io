@@ -15,22 +15,18 @@ p {
 body {
 	background-image: url('../img/bg-hm4.jpg');
 }
-
 #google {
 	margin-top: -25px;
 	opacity: 0;
 }
-
 .page-white {
 	background-color: white;
 	margin: -5px 145px 30px;
 	background: white; /* Цвет фона */
 	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
-	height: 979px;
 	width: 1000px;
     margin: 0 auto;
 }
-
 #logo {
 	float: left;
 	height: 173px;
@@ -76,14 +72,9 @@ body {
 	top:100px;
 	float: right;
 }
-/*li:hover {
-	content: ".";
-	visibility: hidden;
-*/
 ul {
 	display:block;
 }
-
 li {
 	display: block;
 	list-style-type: none;
@@ -92,7 +83,6 @@ li {
 ul.main-menu > li:hover > ul.submenu {
 	display: block;
 }
-
 .horiz-menu {
 	float: left;
 	padding-left: 50px;
@@ -103,19 +93,18 @@ ul.main-menu > li:hover > ul.submenu {
 	background: linear-gradient( to top, #303030, #373737);
 	margin-top: -8px;
 	height: 30px;
-
 }
 .main-menu > li > :after {
 	float: none;
 	font-size: 14px;
-
 }
 .refs {
 	text-decoration: none;
 }
-.main-menu li{
+.main-menu li {
 	float:left;
 	padding: 3px 0px 3px 65px;
+	box-sizing: border-box;
 }
 .main-menu {
 	background-image: url("../img/3.png" );
@@ -130,7 +119,6 @@ ul.main-menu > li:hover > ul.submenu {
 	border-bottom: solid #128aa7 1px;
 	padding: 0px;
 }
-
 ul {
 	font-family: Tahoma;
 	font-size: 14px;
@@ -140,7 +128,6 @@ ul {
 	float: left;
 	border-collapse: collapse;
 }
-
 .title {
 	font-size: 18px;
 	text-align: center;
@@ -169,36 +156,42 @@ table {
 .figure:after {
 
 	content: ' '; 
-	position: relative; /* Абсолютное позиционирование */
-	left: 90px; bottom: 4px; /* Положение треугольника */
+	position: absolute; /* Абсолютное позиционирование */
+	left: 155px; 
+	top: 10px;	 /* Положение треугольника */
 	border: 3px solid transparent;	
 	border-top: 7px solid white;  
 }
 .figure-first:after {
 
 	content: ' '; 
-	position: relative; /* Абсолютное позиционирование */
-	left: 50px; bottom: 4px; /* Положение треугольника */
+	position: absolute; /* Абсолютное позиционирование */
+	left: 115px;
+	top: 10px;/* Положение треугольника */
 	border: 3px solid transparent;	
 	border-top: 7px solid white;   
 }
 .figure-second:after {
 
 	content: ' '; 
-	position: relative; /* Абсолютное позиционирование */
-	left: 74px; bottom: 4px; /* Положение треугольника */
+	position: absolute; /* Абсолютное позиционирование */
+	left: 140px; 
+	top: 10px;
+	bottom: 4px; /* Положение треугольника */
 	border: 3px solid transparent;	
 	border-top: 7px solid white;   
 }
-/*.shadow {
-	background: #373737; /* Цвет фона 
-	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени 
-	padding: 10px;
-} */
+.main-menu li:after {
+	content: ".";
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
 .field {
 	width: 1000px;
 	background-image: url("../img/line3.png");
 	background-repeat: repeat-y;
+	background-color: white;
 	background-size: 1000px;
 	float: left;
 	position: relative;
@@ -220,7 +213,6 @@ table {
 	text-align: center;
 	width:210px;
 	padding: 0px 0px 0px 0px;
-	padding-top: 0px;
 	vertical-align: top;
 }
 p {
@@ -253,10 +245,16 @@ p {
 }
 .main-menu li {
 	position: relative;
+	height: 30px;
+	box-sizing: border-box;
 }
 .travel {
 	width: 115px;
 	padding-right: 0px;
+}
+ul li a {
+	text-decoration: none;
+	color:white;
 }
 
 /* 1. Не задавайте ширину body
@@ -273,4 +271,16 @@ p {
     background-image: url("../img/line1.png");
     background-repeat: repeat-y;
     background-size: 1000px;
-    height: 540px; /*
+    height: 540px; 
+
+
+
+
+1. page-white прибрати висоту
+2. стрілочкам (афтерам) задати position: absolute; та задате відповідне топ, райт
+3. .field прибрати top: -10px;
+додати background-color: white;
+4. на посилання в меню зробити курсор поінтер
+5. .main-menu li   додати height: 30px; і box-sizing: border-box;
+наче має працювати
+/*
