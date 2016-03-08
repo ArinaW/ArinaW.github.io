@@ -250,6 +250,9 @@ p {
 	position: relative;
 	
 }
+.submenu li {
+	line-height: 1;
+}
 .travel {
 	width: 115px;
 	padding-right: 0px;
