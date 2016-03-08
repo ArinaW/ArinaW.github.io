@@ -82,6 +82,9 @@ li {
 .menu li a:hover {
 	color: white;
 }
+.menu li a {
+	cursor: pointer;
+}
 
 #last-li {
 	border: solid 1px #53ade8;
@@ -212,6 +215,10 @@ padding-top: 130px;
 	position: absolute;
 	top: 440px;
 	left: 200px;
+	
+}
+.buttom-button input {
+	cursor: pointer;
 }
 
 #bb {	
