@@ -4,6 +4,9 @@
 	font-family: Tahoma;
 	font-size: 14px;
 }
+body {
+	position: relative;
+}
 
 .img-bg {
 	background-image: url('../img/5/bg5.png') ; 
@@ -11,6 +14,8 @@
 	background-repeat: no-repeat;
 	width: 1210px; 
 	height: 1050px;
+	margin: 0 auto;  
+	position: relative;
 }
 .refs {
 	text-decoration: none;
@@ -99,12 +104,12 @@ li {
 
 .content {
 	position: absolute;
-	top: 250px;
-	left: 350px;
-	width: 560px;
-	height: 615px;
-	/*
-	/*background-color: #000000;*/
+    top: 24%;
+    left: 52%;
+    transform:translate(-50%,-50%);
+    width: 560px;
+    height: auto;
+
 }
 
 .f-block  p {
@@ -189,11 +194,13 @@ padding-top: 130px;
 	border: none;
 	border-bottom: 1px solid #494948;
 	background-color: black;
+
 }
 
 .form-black:focus {
 	background: #1b5288; /* Цвет фона */
 	border: 1px solid #85c9d4; /* Параметры рамки */
+	box-shadow: 0 0 30px rgba(47,123,197,.77), 0 1px #4b4b4b, inset 0 2px 5px rgba(29,26,22,.2), inset 0 0 2px rgba(0,0,0,.1); 
 }
 
 .form-p2 {
@@ -246,12 +253,7 @@ padding-top: 130px;
 	text-align: center;
 	line-height: 1.5;
 }
-.last {
-	position: absolute;
-	top: 900px;
-	height: 200px;
-	width: 2px;
-}
+
 /*
 1.Ховер-ефекти на всі елементи меню
 2. прибрати висоту боді
