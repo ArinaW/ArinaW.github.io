@@ -1,0 +1,617 @@
+/*
+Верстка должна быть резиновой, в архиве есть несколько макетов, демонстрирующих как должен 
+выглядеть сайт при разной ширине экрана. Нужно использовать подход Responsive дизайна
+Верстка должна быть с пиксельной точностью
+Для иконок в фиолетовом блоке с колонками "About our company" нужно использовать спрайт
+Нужно использовать html5-теги
+html-сруктуру, названия классов и стилизацию делаем с помощью методологии БЭМ
+Слайдер только верстаем, никаких плагинов прикручивать не надо. Стрелки слайдера можете не делать
+
+Вместо обычного спрайта иконки сделать векторными. У кого нет Adobe Illustrator можно использовать 
+онлайн-сервис для конвертации png в svg. При желании можно пойти ещё дальше, и сделать svg-спрайт или шрифтовые иконки.
+        */
+        @font-face {
+    font-family: 'league_gothicregular';
+    src: url("../fonts/leaguegothic-regular-webfont.eot");
+    src: url("../fonts/leaguegothic-regular-webfont.eot?#iefix") format('embedded-opentype'),
+         url("../fonts/leaguegothic-regular-webfont.woff2") format('woff2'),
+         url("../fonts/leaguegothic-regular-webfont.woff") format('woff'),
+         url("../fonts/leaguegothic-regular-webfont.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{
+margin: 0;
+padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.menu__link {
+    font-family: 'league_gothicregular';
+}
+body {
+  
+    width: 2400px;
+}
+wrapper {
+    width: 960px;
+    height: 100%;
+}
+.bg-f {
+    width: 2400px;
+    background-image: url("../img/7/bg-top.jpg");
+    
+    
+}
+header {
+    
+    height: 278px;
+    width: 960px;
+    margin: 0px auto;
+    padding-left: 50px;
+}
+.logo {
+    padding-top: 60px;
+    margin-right: 175px;
+    display: block;
+     margin-left: -25px; 
+    
+}
+.logo a{
+    font-family: 'league_gothicregular', Tahoma, sans-serif, Arial;
+    text-transform: uppercase;
+    font-size: 46px;    
+    text-shadow: 0 2px 2px rgba(0,0,0,.3);
+    float: left;
+}
+#logo__link-f {
+    color: #fff;
+}
+#logo__link-s {
+
+    color: (to top, #322539, #745083);
+    
+}
+nav {
+       float: right;
+    /*margin-top: 5px;
+    padding-right: 5px;
+    padding-top: 10px;*/
+}
+.menu {
+}
+.menu__item {
+    padding: 1px 3px;
+    margin: 0 24px;
+    list-style: none;
+    float: left;
+}
+.menu__link {
+    
+     font-family: 'league_gothicregular', Tahoma, sans-serif, Arial;
+    text-transform: uppercase;
+    font-size: 24px;
+    color:#edbfff;
+    text-shadow: 0 2px 2px rgba(0,0,0,.3);
+    
+}
+.menu__link:hover {
+text-decoration: underline;
+}
+span {
+    color:white;
+}
+.slider {
+    
+     height: 330px;
+    width: 960px;
+    margin: 0px auto;
+    padding-top: 70px;
+
+} 
+.circle {
+    height: 168px;
+    width: 10px;
+}
+.title__slider {
+  font-family: 'league_gothicregular', Tahoma, sans-serif, Arial;
+  font-size: 58px;
+  text-shadow: 0 2px 2px rgba(0,0,0,.3);
+  color:white;  
+}
+.container {
+    width: 960px;
+    height: 340px;
+    margin: 0px auto;
+        padding-bottom: 58px;
+}
+.column__three {
+    
+    float: left;
+    color:white;
+    padding: 72px 37px 0 10px;
+    
+}
+.header-block{
+text-transform: uppercase;
+margin-bottom: 5px;
+font-family: 'league_gothicregular', Tahoma, sans-serif, Arial;
+font-size: 30px;
+}
+.content-block{
+margin-bottom: 15px;
+font-family: "open sans lite", sans-serif, Arial;
+color: white;
+font-size: 16px;
+display: block;
+width: 495px;
+}
+.footer-block {
+    text-decoration: none;
+     text-align: right;
+     margin-left: 53px;
+}
+.footer-block a {
+    text-decoration: none;
+    color: white;
+}
+#Iphonef {
+    position: absolute;
+    top: 265px;
+    left: 1420px;
+    height: 365px;
+    border-radius: 25px;
+    z-index: 999;
+}
+
+#Iphones {
+    position: absolute;
+    top: 350px;
+    left: 1350px;
+    height: 220px;
+    z-index: 1;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+}
+.center-text {
+    width: 270px;
+    margin-left: 20px;
+    line-height: 1.5;
+}
+.center-header {
+
+}
+.center-link {
+    width: 215px;
+    font-family: 'league_gothicregular', Tahoma, sans-serif, Arial;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.column__center {
+
+}
+.blog {
+    height: 485px;
+    width: 960px;
+    margin: 0 auto;
+
+    
+}
+
+.blog__left {
+   width: 430px;
+    height: 320px;
+    margin: 95px 10px 90px 0px;
+    float: left;
+    padding: 25px 0 0 0;
+    background: url("../img/7/bg-white-blog.png") 15px 0px no-repeat;
+}
+.header-two {
+    font-size: 14px;
+}
+.blog__right {
+        float: right;
+    width: 450px;
+    margin: 125px 0 0 45px;
+    padding-right: 1px;
+
+}
+.content__slider  {
+color:black;
+}
+.footer__blog a{
+    color: black;
+}
+.trust {
+    height: 120px;
+    margin: 0 auto;
+    width: 960px;
+
+}
+.column__three-footer {
+    /*width: 9.375%;
+    float: left;
+    color:white;
+    margin-right: 80px;
+    margin-left: 40px;*/
+    float: left;
+    color:black;
+    padding: 90px 37px 55px 0px;
+
+    
+
+}
+.footer-nav {
+        width: 960px;
+    margin: 0 auto;
+    padding: 40px 0;
+    padding-bottom: 80px;
+        clear: both;
+    
+}
+.container .column__three .spr {
+    width: 28px;
+    height :25px;
+    background: url("../img/7/spr_about.png") 0 0 no-repeat;
+    float: left;
+        margin: 10px 25px 200px 0;
+}
+.bg-s {
+background-image: linear-gradient(to top, #322539, #745083);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+}
+
+.container .column__three .s-spr {
+    background-position: -27px 0;
+}
+.container .column__three .t-spr {
+     background-position: -55px 0;
+}
+.blog__spr {
+    height: 50px;
+    width: 47px;
+    background: url("../img/7/blog__spr.png") 0 0 no-repeat;
+    float: left;
+    padding: 0 15px 0 0;
+}
+.blog .blog__right .b-spr-s {
+   background-position: 0 -50px; 
+}
+.blog .blog__right .b-spr-t {
+   background-position: 0 -102px; 
+}
+.blog .blog__right .b-spr-f {
+   background-position: 0 -153px; 
+}
+.blog__left__text {
+        padding-left: 60px;
+    font-size: 18px;
+    line-height: 1.35;
+}
+.blog__header-block {
+    font-family: "open sans ", sans-serif, Arial;
+    font-weight: 800;
+        text-transform: none;
+    font-size: 16px;
+}
+#logo__link--o {
+ color: black;   
+}
+#logo__link--t {
+ color: #b9b9b9;   
+}
+.copy {
+    font-family: georgia, sans-serif, Arial;
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.footer__logo {
+    margin-left: 0px ; 
+    padding:0; 
+    margin-bottom: 5px;
+}
+.center-div {
+    background: url("../img/7/Layer-2-copy-.jpg");
+    
+}
+#logos {
+
+    padding: 0 0 0 90px;
+    margin-top: -20px;
+    }
+    footer .container .column__three-footer .center-text {
+        color:#b4b4b4;
+        text-shadow:1px 1px 2px white;
+    }
+    .footer__menu__link {
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .design {
+float: right;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    }
+.black {
+    float: left;
+    position: absolute;
+    top:278px;
+    width: 2400px;
+    height: 400px;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+.circle nav ul li a {
+    display: block;
+    height: 14px;
+    width: 14px;
+    background: url("../img/7/slider-circ.png") 0 0 no-repeat;
+    border-radius: 12px;
+    
+}
+.circle nav ul li a:hover {
+    height: 14px;
+    width: 14px;
+    background: url("../img/7/slider-circ-copy.png") 0 0 no-repeat; 
+     border-radius: 12px; 
+}
+.circle {
+        padding: 0px 320px 0 0;
+    width: 960px;
+    margin: 0 auto;
+
+}
+.circle nav {
+    margin-top: 60px;
+}
+.circle nav ul li {
+        float: left;
+    list-style-type: none;
+    padding: 5px;
+}
+.blog__navi__img {
+    display: block;
+    height: 17px;
+    width: 17px;
+    background: url("../img/7/navi-blog.png") 0 0 no-repeat;
+    border-radius: 15px;
+ 
+}
+.blog__navi__img:hover {
+    display: block;
+    height: 17px;
+    width: 17px;
+    background: url("../img/7/navi-blog-hover.png") 0 0 no-repeat;
+    border-radius: 15px;
+ 
+}
+.circles-img nav ul li {
+        float: left;
+    list-style-type: none;
+    padding: 2px;
+}
+.circles-img nav {
+    margin-top: 60px;
+    margin-right: 150px
+}
+.footer-nav nav ul {
+    margin-left: -30px;
+    margin-top: 5px;
+}
+#des {
+    font-family: "open sans extrabold", sans-serif, Arial;
+    font-weight: 800;
+    font-size: 12px;
+}
+.m-i-footer {
+margin: 0 20px;
+}
+.design p {
+font-size: 13px;
+font-family: "open sans ", sans-serif, Arial;
+}
+.design {
+    padding-top: 10px;
+}
+#but-iph {
+    position: absolute;
+    top: 412px;
+    left: 1475px;
+    height: 72px;
+    width: 72px;
+    background: url("../img/7/but-iphone-play.png");
+    z-index: 9999;
+    
+}
+.container-footer {
+
+    height: auto;
+}
+footer {
+        background-color: #ececec;
+    border-top: 1px solid #d8d8d8;
+    box-sizing: border-box;
+}
+#bg-last {
+       clear: both;
+    width: 100%;
+    background: url("../img/7/bg-but-960.jpg") no-repeat;
+
+}
+.trust-bg {
+        border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+}
+.blog-bg {
+        border-top: 1px solid white;
+    border-bottom: 1px solid #e6e6e6;
+    box-sizing: border-box;
+
+}
+.column-last {
+    padding-right: 0px; padding-left: 33px;
+}
+.footer-first {
+    padding-right: 5px;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 960px) {
+.hover-f {
+    display: block;
+    display: none;
+}
+}
+@media screen and (min-width: 960px) {
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    header{
+        width: 768px;
+        height: 245px;
+        padding-left: 20px;
+         padding-right: 20px; 
+    }
+    nav {
+    clear: both;
+    float: left;
+    margin-left: 25px;
+
+    }
+    .logo {
+        margin-left: 25px;
+    }
+    #menu__item__f {
+     margin-left: 0px;
+    }
+    .slider {
+        width: 768px;
+    }
+    .title__slider {
+        font-size: 40px;
+    }
+    .header-block{
+        font-size: 24px;
+    }
+    .content-block {
+        font-size: 14px;
+            display: block;
+      max-width: 275px;
+}
+#Iphonef {
+    position: absolute;
+    top: 225px;
+    left: 1360px;
+
+}
+
+#Iphones {
+    position: absolute;
+    top: 310px;
+    left: 1290px;
+
+}
+#but-iph {
+    position: absolute;
+    top: 380px;
+    left: 1400px;
+
+}
+.black {
+
+    position: absolute;
+    top: 238px;
+}
+.circle {
+    padding-left: 1100px;
+    max-width: 768px;
+    padding-right: 0px;
+    height: 155px;
+    }
+    .center-text {
+        max-width: 160px;
+    }
+    .center-header{
+        font-size: 20px;
+    }
+    .center-link{
+        max-width: 140px;
+    }
+    .container{
+        width: 768px;
+        height: 340px;
+    }
+    .blog__left {
+        max-width: 235px;
+        max-height: 245px;
+        overflow: hidden;
+    }
+    span {
+        display: block;
+    }
+    .blog__header-block {
+        font-size: 16px;
+    }
+    .blog {
+        max-width: 768px;
+    }
+    .trust {
+        width: 728px;
+
+    }
+    .fd {
+        
+    }
+    #logos {
+        margin-top: 25px;
+        max-width: 728px;
+        padding: 0px;
+    }
+    .hover-s {
+    display: block;
+    display: none;
+
+}
+.column-last {
+    padding-left: 1px;
+}
+.column-center-footer {
+    padding-right: 2px;
+}
+.column__three-footer {
+    padding-right: 45px;
+}
+.footer-nav {
+    width: 768px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+    }
+    
+
+}
