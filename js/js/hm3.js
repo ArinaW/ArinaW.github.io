@@ -31,7 +31,7 @@ function createContainerForAnswers () {
   var parent = document.querySelector('form')
   parent.appendChild(container);
 }
-//FUNCTION GENERATE QUSTIONS
+//FUNCTION GENERATE QUESTIONS
 function createQuestion (number) {
   var question = document.createElement('p');
   question.classList.add('question');
@@ -76,11 +76,12 @@ var testElements = {
   checkbox: createAnswer,
   submit: createSubmit
 }
+
 //calling elements of the object
 testElements.main('div', 'main', 'body');
 testElements.header ();
 testElements.forma ();
-testElements.question (1);
+/*testElements.question (1);
 testElements.container();
 testElements.checkbox ('1', '1', '1', '0');
 testElements.checkbox ('2', '2', '2', '0');
@@ -95,4 +96,16 @@ testElements.container();
 testElements.checkbox ('1', '7', '1', '2');
 testElements.checkbox ('2', '8', '2', '2');
 testElements.checkbox ('3', '9', '3', '2');
+*/
+
+num = 5;
+var numCheck = 0;
+for (i = 1; i <= num; i++) {
+ testElements.question (i);
+testElements.container();
+testElements.checkbox ('1', ++numCheck, '1', (i-1));
+testElements.checkbox ('2', ++numCheck, '2', (i-1));
+testElements.checkbox ('3', ++numCheck, '3', (i-1));
+}
+
 testElements.submit ();
