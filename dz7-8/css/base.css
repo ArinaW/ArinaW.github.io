@@ -157,7 +157,7 @@ body {
     margin-left: -1px;
     margin-right: 440px;
     padding-top: 90px;
-    font-family: "League Gothic", sans-serif;
+    font-family: "League Gothic Regular", sans-serif;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -308,7 +308,7 @@ body {
     height: 22px;
     margin-left: 3px;
     color: white;
-    font-family: "League Gothic", sans-serif;
+    font-family: "League Gothic Regular", sans-serif;
     font-size: 30px;
     font-weight: 400;
     line-height: 24px;
@@ -349,7 +349,7 @@ a.top-row__read-more {
     width: 57px;
     height: 24px;
     color: white;
-    font-family: "League Gothic", sans-serif;
+    font-family: "League Gothic Regular", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -436,7 +436,7 @@ a.top-row__read-more:hover {
     width: 212px;
     height: 22px;
     color: #454545;
-    font-family: "League Gothic", sans-serif;
+    font-family: "League Gothic Regular", sans-serif;
     font-size: 30px;
     font-weight: 400;
     line-height: 24px;
@@ -489,7 +489,7 @@ a.top-row__read-more:hover {
     height: 22px;
     margin-bottom: 20px;
     color: #454545;
-    font-family: "League Gothic", sans-serif;
+    font-family: "League Gothic Regular", sans-serif;
     font-size: 30px;
     font-weight: 400;
     line-height: 24px;
@@ -555,7 +555,7 @@ a.recent-updates__read-more-960 {
     margin-top: 3px;
     margin-right: 1px;
     color: #454545;
-    font-family: "League Gothic", sans-serif;
+    font-family: "League Gothic Regular", sans-serif;
     font-size: 19px;
     font-weight: 400;
     text-align: right;
@@ -647,7 +647,7 @@ a.recent-updates__read-more-768 {
     margin-left: 0px;
     margin-top: 3px;
     color: #454545;
-    font-family: "League Gothic", sans-serif;
+    font-family: "League Gothic Regular", sans-serif;
     font-size: 30px;
     font-weight: 400;
     line-height: 24px;
@@ -669,7 +669,7 @@ a.recent-updates__read-more-768 {
     margin-top: 3px;
     margin-left: 0px;
     color: #454545;
-    font-family: "League Gothic", sans-serif;
+    font-family: "League Gothic Regular", sans-serif;
     font-size: 30px;
     font-weight: 400;
     line-height: 24px;
